@@ -122,6 +122,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &27455949 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1749430991730291796, guid: 2abf6692cf9507a459923625ce82d33a, type: 3}
+  m_PrefabInstance: {fileID: 5227955342826590794}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &561045053 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3412920029308200787, guid: 2abf6692cf9507a459923625ce82d33a, type: 3}
@@ -140,6 +145,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _coreSpeed: 6
+  _wing: {fileID: 27455949}
+  _spinSpeed: 6.22
 --- !u!4 &598000169 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1413201584966760929, guid: 2abf6692cf9507a459923625ce82d33a, type: 3}
@@ -233,7 +240,7 @@ Transform:
   m_GameObject: {fileID: 705507993}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 12.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

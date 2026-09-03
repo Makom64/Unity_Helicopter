@@ -7,9 +7,14 @@ public class HeliController : MonoBehaviour
     [SerializeField] private float _coreSpeed;
     private const string HORIZON = "Horizontal";
     private float _coreTurn;
+    [SerializeField] private GameObject _wing;
+    [SerializeField] private GameObject _tailWing;
+    [SerializeField] private float _spinSpeed;
     private void Update()
     {
         CoreMove();
+        SpinWing();
+        SpinTailWing();
     }
     
     private void CoreMove()
@@ -49,6 +54,23 @@ public class HeliController : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.A))
         {
             _coreTurn = 0;
+        }
+        
+        
+    }
+    private void SpinWing()
+    {
+        if (Input.GetKey(KeyCode.W))
+        {
+            _wing.transform.Rotate(Vector3.up * _spinSpeed * Time.deltaTime);
+        }
+    }
+    
+    private void SpinTailWing()
+    {
+        if (Input.GetKey(KeyCode.W))
+        {
+            _tailWing.transform.Rotate(Vector3.right * _spinSpeed * Time.deltaTime);
         }
     }
 }
