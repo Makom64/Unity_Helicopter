@@ -13,9 +13,9 @@ public class HeliController : MonoBehaviour
     
     private void CoreMove()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
         {
-            transform.position += Vector3.up * _coreSpeed * Time.deltaTime;
+            transform.Translate(Vector3.up * _coreSpeed * Time.deltaTime);
         }
     }
 }
