@@ -146,7 +146,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _coreSpeed: 6
   _wing: {fileID: 27455949}
-  _spinSpeed: 6.22
+  _tailWing: {fileID: 2087796767}
+  _spinSpeed: 342.01
 --- !u!4 &598000169 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1413201584966760929, guid: 2abf6692cf9507a459923625ce82d33a, type: 3}
@@ -338,6 +339,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 598000169}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2087796767 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4644382044318830904, guid: 2abf6692cf9507a459923625ce82d33a, type: 3}
+  m_PrefabInstance: {fileID: 5227955342826590794}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5227955342826590794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -390,7 +396,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameObject
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 23838618423724798, guid: 2abf6692cf9507a459923625ce82d33a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1413201584966760929, guid: 2abf6692cf9507a459923625ce82d33a, type: 3}
