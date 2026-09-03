@@ -22,5 +22,10 @@ public class HeliController : MonoBehaviour
         {
             transform.Translate(-1.0f * Vector3.up * _coreSpeed * Time.deltaTime);
         }
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            transform.Translate(Vector3.forward * _coreSpeed * Time.deltaTime);
+        }
     }
 }
